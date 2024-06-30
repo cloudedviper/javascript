@@ -1,30 +1,17 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Wait for the DOM content to fully load before attaching event listeners
-    let addButton = document.getElementById("addButton");
-    let taskInput = document.getElementById("taskInput");
-    let taskList = document.getElementById("taskList");
+const numbers = [1, 2, 3, 4, 5, 6];
+//const dubnums = numbers.map(num => num * 2);
+//console.log(dubnums)
 
-    if (!addButton || !taskInput || !taskList) {
-        console.error("Required elements not found.");
-        return;
-    }
+//const even = numbers.filter(num => num % 2 === 0)
+//console.log(even)
 
-    addButton.addEventListener("click", function() {
-        let taskText = taskInput.value.trim();
+//const found = numbers.find(num => num === 6)
+//console.log(found)
 
-        if (taskText !== "") {
-            let li = document.createElement("li");
-            li.textContent = taskText;
+const sum = numbers.reduce((acc, num) => (acc + num));
+console.log(sum)
 
-            li.addEventListener("click", function() {
-                li.classList.toggle("completed");
-            });
 
-            taskList.appendChild(li);
-            taskInput.value = "";
-        }
-    });
-});
 
 
 
