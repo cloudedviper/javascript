@@ -17,3 +17,12 @@ const numbers = [1, 2, 3, 4, 5, 6];
 const sum = numbers.reduce((acc, num) => (acc + num));
 console.log(sum);
 
+let p = new Promise((resolve, reject) => {
+    let a = 1 + 1
+    if (a == 2) {
+        resolve ("Success")
+    } else {
+        reject ("Failure")
+    }
+})
+
