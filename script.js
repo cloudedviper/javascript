@@ -17,12 +17,28 @@ const numbers = [1, 2, 3, 4, 5, 6];
 const sum = numbers.reduce((acc, num) => (acc + num));
 console.log(sum);
 
-let p = new Promise((resolve, reject) => {
-    let a = 1 + 1
-    if (a == 2) {
-        resolve ("Success")
-    } else {
-        reject ("Failure")
-    }
-})
+let promise = new Promise((resolve, reject) => {
+  // Do some async operation
+  let success = false; // This is just an example condition
+  if (success) {
+    resolve('Operation was successful');
+  } else {
+    reject('Operation failed');
+  }
+});
+
+promise.then((message) => {
+  console.log(message); // If the promise is resolved
+}).catch((error) => {
+  console.error(error); // If the promise is rejected
+});
+
+promise.catch((error) => {
+  console.error(error); // Handle error
+});
+
+promise.finally(() => {
+  console.log('Promise has been settled (fulfilled or rejected).');
+});
+
 
