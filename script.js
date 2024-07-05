@@ -1,4 +1,4 @@
-const numbers = [1, 2, 3, 4, 5, 6];
+// const numbers = [1, 2, 3, 4, 5, 6];
 //const dubnums = numbers.map(num => num * 2);
 //console.log(dubnums)
 
@@ -14,10 +14,10 @@ const numbers = [1, 2, 3, 4, 5, 6];
 //const odds = numbers.filter(num => num % 3 === 0);
 //console.log(odds)
 
-const sum = numbers.reduce((acc, num) => (acc + num));
-console.log(sum);
+/* const sum = numbers.reduce((acc, num) => (acc + num));
+console.log(sum); */
 
-let promise = new Promise((resolve, reject) => {
+/* let promise = new Promise((resolve, reject) => {
   // Do some async operation
   let success = false; // This is just an example condition
   if (success) {
@@ -40,5 +40,21 @@ promise.catch((error) => {
 promise.finally(() => {
   console.log('Promise has been settled (fulfilled or rejected).');
 });
+*/
+
+/* 
+function addNumbers(num1, num2) {
+  return num1 + num2;
+}
+
+console.log(addNumbers(3, 7)); */
+
+
+
+function sumNumbers(num1, num2) {
+  return num1 + num2;
+}
+
+console.log(sumNumbers(33, 77))
 
 
