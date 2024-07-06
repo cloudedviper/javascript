@@ -51,10 +51,20 @@ console.log(addNumbers(3, 7)); */
 
 
 
-function sumNumbers(num1, num2) {
+/* function sumNumbers(num1, num2) {
   return num1 + num2;
 }
 
-console.log(sumNumbers(33, 77))
+console.log(sumNumbers(33, 77)) */
 
 
+document.addEventListener('DOMContentLoaded', (event) => {
+  const inputField = document.getElementById('inputField');
+  const myButton = document.getElementById('myButton');
+  const output = document.getElementById('output');
+
+  myButton.addEventListener('click', () => {
+      const inputValue = inputField.value;
+      output.textContent = `You entered: ${inputValue}`;
+  });
+});
