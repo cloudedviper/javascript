@@ -28,16 +28,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button and Input Example</title>
+    <title>Button, Input, and Dropdown Example</title>
 </head>
 <body>
-    <input type="text" id="inputField" placeholder="Type something">
+    <label for="inputField">Enter something:</label>
+    <input type="text" id="inputField" list="suggestions" placeholder="Type something">
+    <datalist id="suggestions">
+        <option value="Option 1">
+        <option value="Option 2">
+        <option value="Option 3">
+    </datalist>
+    
     <button id="myButton">Click Me</button>
     <p id="output"></p>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-   <!--  <input type="text" name="inputField" id="Type">
-    <button id="myButton">Click</button> -->

@@ -57,7 +57,6 @@ console.log(addNumbers(3, 7)); */
 
 console.log(sumNumbers(33, 77)) */
 
-
 document.addEventListener('DOMContentLoaded', (event) => {
   const inputField = document.getElementById('inputField');
   const myButton = document.getElementById('myButton');
@@ -68,3 +67,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
       output.textContent = `You entered: ${inputValue}`;
   });
 });
+
+
