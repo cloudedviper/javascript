@@ -1,47 +1,37 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
-    <script src="script.js"></script>
     <style>
-        .completed {
-            text-decoration: line-through;
-            color: rgb(44, 8, 145);
+        body {
+            font-family: Arial, sans-serif;
         }
-        h1 {
-            color: aqua;
+        #toDoList {
+            list-style-type: none;
+            padding: 0;
+        }
+        #toDoList li {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px;
+            border: 1px solid #ddd;
+            margin-bottom: 5px;
+        }
+        #toDoList li button {
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <h1>To-Do List</h1>
     <input type="text" id="taskInput" placeholder="New task...">
-    <button id="addButton">Add</button>
-    <ul id="taskList"></ul>
-</body>
-</html> -->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button, Input, and Dropdown Example</title>
-</head>
-<body>
-    <label for="inputField">Enter something:</label>
-    <input type="text" id="inputField" list="suggestions" placeholder="Type something">
-    <datalist id="suggestions">
-        <option value="Option 1">
-        <option value="Option 2">
-        <option value="Option 3">
-    </datalist>
-    
-    <button id="myButton">Click Me</button>
-    <p id="output"></p>
-
+    <button onclick="addTask()">Add Task</button>
+    <ul id="toDoList"></ul>
     <script src="script.js"></script>
 </body>
 </html>
