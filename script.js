@@ -18,8 +18,8 @@ function addTask() {
       toDoList.removeChild(listItem);
   };
 
-  listItem.appendChild(removeButton);
-  toDoList.appendChild(listItem);
+  listItem.append(removeButton);
+  toDoList.append(listItem);
 
   taskInput.value = '';
 }
